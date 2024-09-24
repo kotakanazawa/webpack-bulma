@@ -1,3 +1,9 @@
+プロジェクトの初期化コマンド
+```
+rails new webpack-bulma -j webpack -c bulma --skip-action-cable --skip-action-text --skip-action-mailer --skip-action-mailbox --sukip-jbuilder
+```
+
+package.json
 ```js
 {
   "name": "app",
