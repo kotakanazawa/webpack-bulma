@@ -1,9 +1,11 @@
 プロジェクトの初期化コマンド
+
 ```
 rails new webpack-bulma -j webpack -c bulma --skip-action-cable --skip-action-text --skip-action-mailer --skip-action-mailbox --sukip-jbuilder
 ```
 
 package.json
+
 ```js
 {
   "name": "app",
@@ -71,6 +73,8 @@ exec foreman start -f Procfile.dev --env /dev/null "$@"
 ```
 
 - `exec`:
-  - 後ろのforemanに制御を渡す
-  - execを使うと、新しいプロセスは作成されない。代わりに、現在のシェルプロセス自体が指定されたコマンドに「変身」する
-  - 元のシェルプロセスが完全に置き換えられるので、execの後のコマンドが終了すると、元のシェルセッションも終了する
+  - 後ろの foreman に制御を渡す
+  - exec を使うと、新しいプロセスは作成されない。代わりに、現在のシェルプロセス自体が指定されたコマンドに「変身」する
+  - 元のシェルプロセスが完全に置き換えられるので、exec の後のコマンドが終了すると、元のシェルセッションも終了する
+- `start`:
+  - Foremanを実行する。Foremanとは開発環境でよく使われるプロセスマネジャー。たくさんのプロセスを一度に動かすのを手伝ってくれるツール。これを使わないなら、複数のプロセスを個別に起動する必要がある
